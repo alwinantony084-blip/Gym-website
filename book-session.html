@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Session - Oxygen Gym</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="sub-page">
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">OXYGEN<span> GYM</span></div>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#programs">Programs</a></li>
+          <li><a href="index.html#trainers">Trainers</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="detail-hero" style="background-image: url('assest/image/class-1.jpg');">
+    <div class="detail-hero-content">
+      <h1>Book A Session</h1>
+      <p>Start Your Fitness Journey Today</p>
+    </div>
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section class="booking-section">
+    <div class="booking-layout">
+      
+      <!-- Booking Form -->
+      <div class="booking-form-wrapper">
+        <form class="booking-form" id="session-booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" id="age" min="12" max="100" placeholder="25" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="goal">Fitness Goal</label>
+              <select id="goal" required>
+                <option value="" disabled selected>Select Fitness Goal</option>
+                <option value="Strength Gain">Strength Gain</option>
+                <option value="Fat Loss">Fat Loss</option>
+                <option value="Muscle Building">Muscle Building</option>
+                <option value="Flexibility">Flexibility &amp; Mobility</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="trainer">Preferred Trainer</label>
+              <select id="trainer" required>
+                <option value="" disabled selected>Select Trainer</option>
+                <option value="Alex Morgan">Alex Tank Rivers</option>
+                <option value="Sophia Lee">Elena Vance</option>
+                <option value="Chris Evans">David Chen</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="program">Preferred Program</label>
+              <select id="program" required>
+                <option value="" disabled selected>Select Program</option>
+                <option value="Strength Training">Strength Training</option>
+                <option value="Cardio Burn">Cardio Burn</option>
+                <option value="Yoga &amp; Flex">Yoga &amp; Flex</option>
+                <option value="Muscle Building">Muscle Building</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pref-date">Preferred Date</label>
+              <input type="date" id="pref-date" required>
+            </div>
+            <div class="form-group">
+              <label for="pref-time">Preferred Time</label>
+              <input type="time" id="pref-time" required>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message / Special Notes</label>
+            <textarea id="message" placeholder="Tell us about any injuries, fitness level, or requirements..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Booking Request</button>
+        </form>
+      </div>
+
+      <!-- Booking Alternatives -->
+      <div class="booking-alt-wrapper">
+        <div class="alt-contact-card">
+          <h4>Direct Booking Options</h4>
+          <p>Prefer instant booking? Connect with us immediately using the channels below.</p>
+          <div class="alt-buttons-list">
+            <a href="#" target="#" class="alt-btn whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp
+            </a>
+            <a href="#" class="alt-btn email">
+              <i class="fa-solid fa-envelope"></i> Book via Email
+            </a>
+            <a href="#" class="alt-btn phone">
+              <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SUCCESS POPUP MODAL -->
+  <div class="modal-overlay" id="success-modal-overlay">
+    <div class="success-modal">
+      <div class="modal-icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 class="modal-title">Booking Request Sent Successfully!</h3>
+      <p class="modal-desc">Our trainer will contact you soon to finalize your training slot.</p>
+      <button class="modal-close-btn" id="modal-close-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- CONTACT / FOOTER -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-column">
+        <h2 class="brand-name"><span class="highlight">OXYGEN</span> GYM</h2>
+        <p class="brand-desc">
+          Empowering you to reach your fitness goals with expert trainers and top-notch facilities.
+        </p>
+        <div class="hours">
+          <p><strong>Monday - Saturday:</strong><br>6:00 AM – 10:00 PM</p>
+        </div>
+      </div>
+
+      <div class="contact-column">
+        <h3>Quick Links</h3>
+        <ul class="quick-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#programs">Programs</a></li>
+          <li><a href="index.html#trainers">Trainers</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-column">
+        <h3>Contact Us</h3>
+        <p class="contact-info-item"><i class="fa-solid fa-location-dot"></i> 123 Fitness Street, Gym City, INDIA</p>
+        <p class="contact-info-item"><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+        <p class="contact-info-item"><i class="fa-solid fa-envelope"></i> info@oxygengymfit.com</p>
+      </div>
+
+      <div class="contact-column">
+        <h3>Our Newsletter</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Email Address" required>
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="footer-social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Oxygen Gym | Designed by <span>Alwin</span></p>
+      <div class="policy">
+        <a href="#">Privacy Policy</a> • 
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 OxygenGym. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- POPUP INTERACTION SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('session-booking-form');
+      const overlay = document.getElementById('success-modal-overlay');
+      const closeBtn = document.getElementById('modal-close-btn');
+
+      if (form && overlay && closeBtn) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          
+          // Show the modal success popup
+          overlay.classList.add('active');
+          
+          // Reset form fields
+          form.reset();
+        });
+
+        // Hide popup
+        closeBtn.addEventListener('click', () => {
+          overlay.classList.remove('active');
+        });
+
+        // Close on overlay background click
+        overlay.addEventListener('click', (e) => {
+          if (e.target === overlay) {
+            overlay.classList.remove('active');
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
