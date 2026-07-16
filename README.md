@@ -6,7 +6,6 @@ A modern, responsive, and premium gym website built using **HTML, CSS, and JavaS
 
 [👉 https://YOUR-NETLIFY-URL.netlify.app](https://gymplace.netlify.app/)
 
-> Replace the above link with your Netlify deployment URL.
 
 
 
